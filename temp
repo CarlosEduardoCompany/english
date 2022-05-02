@@ -1,0 +1,194 @@
+<div class="slider">
+  <!--------- Content ------------->
+  <div class="slider-container">
+    <!---- Opinion ------->
+    <div class="slide active">
+      <div>
+        <h3 class="card-title mt-2">Opinion</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a great cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una gran taza</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a fantastic cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una fantástica
+                taza</span></li>
+
+            <li class="sound-container"><span class="english-text">I have a incredible cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una increible
+                taza</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Size ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Size</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a big cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza grande</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a small cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza pequeña</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a medium cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza mediana</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Shape ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Shape</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a round cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza redonda</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a square cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza cuadrada</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a triangular cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza
+                triángular</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Age ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Age</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have an old cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza vieja</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a new cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza nueva</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a modern cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza moderna</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Color ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Color</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a white cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza blanca</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a red cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza roja</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a black cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza negra</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Temperature ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Temperature</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a cold cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza fría</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a hot cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza caliente</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a warm cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza cálida</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Observation ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Observation</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a broken cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza rota</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a repaired cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza reparada</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Origins ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Origins</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a Korean cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza koreana</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a Bolivian cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza
+                boliviana</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---- Material ------->
+    <div class="slide">
+      <div>
+        <h3 class="card-title mt-2">Material</h3>
+        <div>
+          <ul class="card list-style-none">
+            <li class="sound-container"><span class="english-text">I have a plastic cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza plástica</span>
+            </li>
+
+            <li class="sound-container"><span class="english-text">I have a glass cup</span><audio
+                class="english-audio"></audio><br /><span class="spanish-text">Yo tengo una taza de
+                cristal</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------- Controls ------------->
+  <button class="slider-btn-next">&raquo;</button>
+  <button class="slider-btn-prev">&laquo;</button>
+</div>

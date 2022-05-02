@@ -1,0 +1,403 @@
+/******************************* Reset *******************************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway-Regular";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/******************************* Customs Properties *******************************/
+/********************** root **********************/
+:root {
+  --first-color: #fd6107;
+  --first-alpha-color: #fd610750;
+  --white-color: #ffffff;
+  --gray-light-color: #eee;
+  --black-color: #000000;
+  --box-shadow: 0.25rem 0.25rem 0.25rem #00000075;
+}
+
+/********************** fonts **********************/
+/********** Raleway-Bold **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Bold.ttf);
+  font-family: "Raleway-Bold";
+}
+
+/********** Raleway-SemiBold **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-SemiBold.ttf);
+  font-family: "Raleway-SemiBold";
+}
+
+/********** Raleway-Regular **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Regular.ttf);
+  font-family: "Raleway-Regular";
+}
+
+/********** Raleway-Black **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Black.ttf);
+  font-family: "Raleway-Black";
+}
+
+/******************************* Styles for this Site *******************************/
+/******************** Home Lesson ********************/
+.lesson-header {
+  height: 8vh;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.lesson-header h1 {
+  color: var(--first-color);
+}
+
+.lessons-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 92vh;
+  border: thin solid;
+}
+
+.lesson-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-family: 'Raleway-SemiBold';
+  color: var(--first-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+   border: thin solid var(--first-color);
+   box-shadow: var(--box-shadow);
+}
+
+.lesson-link:first-child {
+  margin-top: 1rem;
+}
+
+.lesson-link span {
+  align-self: flex-start;
+  margin-top: -0.5rem;
+  margin-right: -0.3rem;
+  color:  var(--black-color);
+}
+
+/******************************* Menu *******************************/
+.menu-btn {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white-color);
+  border: thin solid var(--first-color);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: box-shadow 0.5s linear;
+}
+
+.home-btn {
+  position: fixed;
+  bottom: 4.5rem;
+  left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white-color);
+  border: thin solid var(--first-color);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transform: translateX(-100vw);
+  transition: box-shadow 0.5s linear, transform 0.5s linear;
+}
+
+.home-lesson-btn {
+  position: fixed;
+  bottom: 8.5rem;
+  left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white-color);
+  border: thin solid var(--first-color);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transform: translateX(-100vw);
+  transition: box-shadow 0.5s linear, transform 0.5s linear;
+}
+
+.svg-home {
+  fill: var(--first-color);
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-open,
+.svg-close {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--first-color);
+}
+
+/******************** All Lesson ********************/
+.lesson-container {
+  margin-bottom: 4rem;
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  
+}
+
+.theory-container {
+  width: 100%;
+  margin: 0;
+  transition: transform 0.75s linear;
+}
+
+.spanish-text {
+ color: var(--black-color);
+ font-family: "Raleway-Regular";
+}
+
+.table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0.5rem;
+}
+
+.table td {
+  text-align: center;
+  border: thin solid var(--black-color);
+}
+
+.card-test-container {
+  margin-top: 1rem;
+}
+
+/*************************************** Utilities ***************************************/
+/******************** @keyframes ********************/
+@keyframes animationTheoryToRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(110vw);
+  }
+}
+
+.animation-theory-toright {
+  animation-name: animationTheoryToRight;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes animationTheoryToLeft {
+  from {
+    transform: translateX(110vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animation-theory-toleft {
+  animation-name: animationTheoryToLeft;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes animationPracticeToRight {
+  from {
+    transform: translateX(-110vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animation-practice-toright {
+  animation-name: animationPracticeToRight;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes animationPracticeToLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-110vw);
+  }
+}
+
+.animation-practice-toleft {
+  animation-name: animationPracticeToLeft;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+/******************** Classes ********************/
+.b-gray {
+  background-color: var(--gray-light-color);
+}
+
+.card {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: thin solid var(--first-color);
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow-color);
+}
+
+.card-title {
+  width: 90%;
+  margin: 0 auto 0.5rem auto;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Raleway-SemiBold";
+  border-bottom: thin solid var(--first-color);
+}
+
+.disable {
+  color: #aaa;
+  border-color: #aaa;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.english-text {
+ font-family: "Raleway-semiBold";
+}
+
+.grid-colums-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-evenly;
+}
+
+.sound-container {
+  margin: 0.5rem auto;
+  padding: 0.3rem;
+  color: var(--first-color);
+  font-family: "Raleway-SemiBold";
+  border: thin solid var(--black-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+.subtitle-section {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-family: "Raleway-Bold";
+  font-size: 1.2rem;
+  border-bottom: thin solid;
+  background-color: var(--first-alpha-color);
+}
+
+.text {
+  width: 90%;
+  margin: 0.5rem auto 2rem auto;
+  font-family: "Raleway-Regular";
+  text-align: justify;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.mt-1 {
+margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.max-container {
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+.max-container::-webkit-scrollbar {
+  display: none;
+}
+
+.vocabulary-container {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.vocabulary-container::-webkit-scrollbar {
+  display: none;
+}
+
+.d-none {
+  display: none;
+}
+
+
+/* ****************************** */
+.slider-tag {
+  width: 100vw;
+}

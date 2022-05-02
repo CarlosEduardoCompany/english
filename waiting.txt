@@ -1,0 +1,6 @@
+finished the words in the html
+-an
+-the an
+-vocabulary
+
+finished dataBase and js

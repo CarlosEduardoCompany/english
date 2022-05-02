@@ -1,0 +1,13 @@
+{
+  "name": "Aprender Ingles",
+  "short-name": "Aprender Ingles",
+  "description": "Programa para aprender ingles",
+  "background-color": "#ffffff",
+  "theme-color": "#fd6107",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es",
+  "icons": []
+}

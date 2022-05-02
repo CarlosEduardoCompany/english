@@ -1,0 +1,245 @@
+/******************************* Reset *******************************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway-Regular";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/******************************* Customs Properties *******************************/
+/********************** root **********************/
+:root {
+  --first-color: #fd6107;
+  --first-alpha-color: #fd610750;
+  --gray-light-color: #eee;
+  --black-color: #000000;
+  --box-shadow: 0.25rem 0.25rem 0.25rem #00000075;
+  --green-color: #2ae409ca;
+  --red-color: #be0c0c;
+  --white-color: #ffffff;
+}
+
+/********************** fonts **********************/
+/********** Raleway-Bold **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Bold.ttf);
+  font-family: "Raleway-Bold";
+}
+
+/********** Raleway-SemiBold **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-SemiBold.ttf);
+  font-family: "Raleway-SemiBold";
+}
+
+/********** Raleway-Regular **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Regular.ttf);
+  font-family: "Raleway-Regular";
+}
+
+/********** Raleway-Black **********/
+@font-face {
+  src: url(../assets/fonts/Raleway-Black.ttf);
+  font-family: "Raleway-Black";
+}
+
+/******************************* Styles for this Site *******************************/
+/* Header */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.nav h1 {
+  color: var(--first-color);
+}
+
+.link-home {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: thin solid var(--first-color);
+}
+
+.svg-home {
+  fill: var(--first-color);
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--white-color);
+}
+
+ .title-link-home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   color: var(--black-color);
+ }
+
+ /* Form */
+
+  .form-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   height: 92vh;
+ }
+
+ .title-form {
+   color: var(--black-color);
+   text-align: center;
+  font-size: 1.8rem;
+ }
+
+ .form-content {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 80vh;
+   padding: 2rem;
+   border-radius: 0 0 0.5rem 0.5rem;
+   box-shadow: var(--box-shadow);
+ }
+
+ .user-data {
+   margin-bottom: 3rem;
+ }
+
+ .user-container,
+ .password-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin: auto;
+ }
+
+ .user-container svg,
+ .password-container svg {
+   fill: var(--first-color);
+   width: 3rem;
+   height: 3rem;
+   margin-right: 1rem;
+ }
+
+ .user-container input,
+ .password-container input {
+   width: 100%;
+   height: 2rem;
+   margin-bottom: 0.5rem;
+   padding: 0.5rem;
+   border: thin solid var(--first-color);
+   border-radius: 0.5rem;
+ }
+
+ .forgget-password-container {   
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+  margin: -0.6rem auto auto auto;
+ }
+
+.forgget-password-link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 0.5rem;
+   text-decoration: none;
+   color: var(--black-color);
+   border-bottom-style: solid;
+   border-bottom-width: thin;
+   border-bottom-color: var(--first-color);
+ }
+
+.forgget-password-link p {
+  font-size: 0.75rem;
+  color: var(--first-color);
+ }
+
+ .new-user-link {  
+   position: absolute;
+   right: 1rem;
+   bottom: 0.5rem;
+   width: 2.5rem;
+ }
+
+ .new-user-link svg {
+   fill: var(--first-color);
+   width: 100%;
+   height: 100%;
+ }
+
+ .policy  {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 90%;
+   margin-top: 2rem;
+ }
+
+.login-btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+ .login-btn {
+   width: 90%;
+   margin-bottom: 30%;
+   padding: 0.5rem;
+   color: var(--white-color);
+   font-size: 1.5rem;
+   box-shadow: var(--box-shadow);
+   border: thin solid var(--white-color);
+   background-color: var(--first-color);
+   border-radius: 0.5rem;
+   cursor: pointer;
+ }
+/*************************************** Utilities ***************************************/
+.d-none {
+  display: none;
+}
+
+.disable {
+  color: #bbb;
+  fill: #bbb;
+  box-shadow: none;
+  border-color: #bbb;
+  pointer-events: none;
+}
